@@ -1,0 +1,546 @@
+CRITICAL - 2026-07-22 11:05:21 --> Error: Class "App\Models\ModelUser" not found
+[Method: GET, Route: datauser]
+in APPPATH\Controllers\UserController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->datauser()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+CRITICAL - 2026-07-22 11:06:06 --> Error: Class "App\Models\ModalUser" not found
+[Method: GET, Route: datauser]
+in APPPATH\Controllers\UserController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->datauser()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+CRITICAL - 2026-07-22 11:06:09 --> Error: Class "App\Models\ModalUser" not found
+[Method: GET, Route: datauser]
+in APPPATH\Controllers\UserController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->datauser()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+CRITICAL - 2026-07-22 11:06:30 --> Error: Class "App\Models\ModalUser" not found
+[Method: GET, Route: datauser]
+in APPPATH\Controllers\UserController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->datauser()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+CRITICAL - 2026-07-22 11:07:26 --> Error: Class "App\Models\ModalUser" not found
+[Method: GET, Route: datauser]
+in APPPATH\Controllers\UserController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->datauser()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+CRITICAL - 2026-07-22 11:07:37 --> Error: Class "App\Models\ModalUser" not found
+[Method: GET, Route: datauser]
+in APPPATH\Controllers\UserController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->datauser()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+ERROR - 2026-07-22 11:08:00 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\app\Controllers\UserController.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\CodeIgniter.php(974): App\Controllers\UserController->datauser()
+#8 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\rewrite.php(44): require_once('D:\\Olla Smst 8\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\app\Controllers\UserController.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\CodeIgniter.php(974): App\Controllers\UserController->datauser()
+#7 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\Olla Smst 8\Skripsi\BAB IV\program\JeanetteBakery\system\rewrite.php(44): require_once('D:\\Olla Smst 8\\...')
+#13 {main}
+CRITICAL - 2026-07-22 11:08:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: datauser]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `User`', [], false)
+ 3 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\UserController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->datauser()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 11:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 11:08:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboard/dashboard.php"
+[Method: GET, Route: datauser]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dashboard.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('dashboard/dashboard', [], true)
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datamaster/v_datauser', [], true)
+ 4 APPPATH\Controllers\UserController.php(19): view('datamaster/v_datauser', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->datauser()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 11:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 11:09:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamaster/tambah.php"
+[Method: GET, Route: datauser/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamaster/tambah.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datamaster/tambah', [], true)
+ 3 APPPATH\Controllers\UserController.php(31): view('datamaster/tambah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 11:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 11:10:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamaster/tambah.php"
+[Method: GET, Route: datauser/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamaster/tambah.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datamaster/tambah', [], true)
+ 3 APPPATH\Controllers\UserController.php(31): view('datamaster/tambah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 11:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 11:12:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboard/dashboard.php"
+[Method: GET, Route: datauser/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dashboard.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('dashboard/dashboard', [], true)
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datamaster/tambahuser', [], true)
+ 4 APPPATH\Controllers\UserController.php(31): view('datamaster/tambahuser', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->tambah()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 11:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 11:15:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datauser/edit.php"
+[Method: GET, Route: datauser/edit/USR000001]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datauser/edit.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datauser/edit', [], true)
+ 3 APPPATH\Controllers\UserController.php(109): view('datauser/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->edit('USR000001')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+CRITICAL - 2026-07-22 11:16:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datauser/edit.php"
+[Method: GET, Route: datauser/edit/USR000001]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datauser/edit.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datauser/edit', [], true)
+ 3 APPPATH\Controllers\UserController.php(109): view('datauser/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->edit('USR000001')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+CRITICAL - 2026-07-22 11:17:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datauser/edituser.php"
+[Method: GET, Route: datauser/edit/USR000001]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datauser/edituser.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datauser/edituser', [], true)
+ 3 APPPATH\Controllers\UserController.php(109): view('datauser/edituser', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UserController->edit('USR000001')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 11:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 11:43:57 --> Error: Class "App\Models\ModelPelanggan" not found
+[Method: GET, Route: datapelanggan]
+in APPPATH\Controllers\PelangganController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PelangganController->datapelanggan()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PelangganController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 11:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 11:50:02 --> Error: Class "App\Controllers\ModelPelanggan" not found
+[Method: GET, Route: datapelanggan/tambah]
+in APPPATH\Controllers\PelangganController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PelangganController->tambah()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PelangganController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+CRITICAL - 2026-07-22 11:50:32 --> Error: Class "App\Controllers\ModelUser" not found
+[Method: GET, Route: datapelanggan/tambah]
+in APPPATH\Controllers\PelangganController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PelangganController->tambah()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PelangganController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+CRITICAL - 2026-07-22 11:50:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datapelanggan/tambah.php"
+[Method: GET, Route: datapelanggan/tambah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datapelanggan/tambah.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datapelanggan/tambah', [], true)
+ 3 APPPATH\Controllers\PelangganController.php(38): view('datapelanggan/tambah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PelangganController->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PelangganController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 11:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 11:55:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datapelanggan/edit.php"
+[Method: GET, Route: datapelanggan/edit/PLG000001]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datapelanggan/edit.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datapelanggan/edit', [], true)
+ 3 APPPATH\Controllers\PelangganController.php(130): view('datapelanggan/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PelangganController->edit('PLG000001')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PelangganController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 11:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 11:56:15 --> ErrorException: Undefined array key "Email"
+[Method: GET, Route: datapelanggan/edit/PLG000001]
+in APPPATH\Views\datamaster\editpelanggan.php on line 101.
+ 1 APPPATH\Views\datamaster\editpelanggan.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Email"', 'D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\app\\Views\\datamaster\\editpelanggan.php', 101)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\app\\Views\\datamaster\\editpelanggan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datamaster/editpelanggan', [], true)
+ 5 APPPATH\Controllers\PelangganController.php(130): view('datamaster/editpelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\PelangganController->edit('PLG000001')
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PelangganController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 11:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 11:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 12:14:49 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ModalKemasan::getKemasanWithProduk
+[Method: GET, Route: datakemasan]
+in SYSTEMPATH\Model.php on line 758.
+ 1 APPPATH\Controllers\KemasanController.php(19): CodeIgniter\Model->__call('getKemasanWithProduk', [])
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KemasanController->datakemasan()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KemasanController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+CRITICAL - 2026-07-22 12:17:35 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ModalKemasan::getKemasanWithProduk
+[Method: GET, Route: datakemasan]
+in SYSTEMPATH\Model.php on line 758.
+ 1 APPPATH\Controllers\KemasanController.php(19): CodeIgniter\Model->__call('getKemasanWithProduk', [])
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KemasanController->datakemasan()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KemasanController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+CRITICAL - 2026-07-22 12:17:38 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ModalKemasan::getKemasanWithProduk
+[Method: GET, Route: datakemasan]
+in SYSTEMPATH\Model.php on line 758.
+ 1 APPPATH\Controllers\KemasanController.php(19): CodeIgniter\Model->__call('getKemasanWithProduk', [])
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KemasanController->datakemasan()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KemasanController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 12:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 12:17:43 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ModalKemasan::getKemasanWithProduk
+[Method: GET, Route: datakemasan]
+in SYSTEMPATH\Model.php on line 758.
+ 1 APPPATH\Controllers\KemasanController.php(19): CodeIgniter\Model->__call('getKemasanWithProduk', [])
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KemasanController->datakemasan()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KemasanController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+CRITICAL - 2026-07-22 12:17:59 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ModalKemasan::getKemasanWithProduk
+[Method: GET, Route: datakemasan]
+in SYSTEMPATH\Model.php on line 758.
+ 1 APPPATH\Controllers\KemasanController.php(19): CodeIgniter\Model->__call('getKemasanWithProduk', [])
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KemasanController->datakemasan()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KemasanController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 12:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 12:27:04 --> ErrorException: Undefined array key "NamaProduk"
+[Method: GET, Route: datakemasan]
+in APPPATH\Views\datamaster\v_datakemasan.php on line 188.
+ 1 APPPATH\Views\datamaster\v_datakemasan.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NamaProduk"', 'D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\app\\Views\\datamaster\\v_datakemasan.php', 188)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\app\\Views\\datamaster\\v_datakemasan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datamaster/v_datakemasan', [], true)
+ 5 APPPATH\Controllers\KemasanController.php(22): view('datamaster/v_datakemasan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KemasanController->datakemasan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KemasanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 12:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 12:27:59 --> ErrorException: Undefined array key "NamaProduk"
+[Method: GET, Route: datakemasan]
+in APPPATH\Views\datamaster\v_datakemasan.php on line 188.
+ 1 APPPATH\Views\datamaster\v_datakemasan.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NamaProduk"', 'D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\app\\Views\\datamaster\\v_datakemasan.php', 188)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\app\\Views\\datamaster\\v_datakemasan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datamaster/v_datakemasan', [], true)
+ 5 APPPATH\Controllers\KemasanController.php(22): view('datamaster/v_datakemasan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KemasanController->datakemasan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KemasanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 12:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 12:28:02 --> ErrorException: Undefined array key "NamaProduk"
+[Method: GET, Route: datakemasan]
+in APPPATH\Views\datamaster\v_datakemasan.php on line 188.
+ 1 APPPATH\Views\datamaster\v_datakemasan.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NamaProduk"', 'D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\app\\Views\\datamaster\\v_datakemasan.php', 188)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\app\\Views\\datamaster\\v_datakemasan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datamaster/v_datakemasan', [], true)
+ 5 APPPATH\Controllers\KemasanController.php(22): view('datamaster/v_datakemasan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KemasanController->datakemasan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KemasanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 12:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 12:28:06 --> ErrorException: Undefined array key "NamaProduk"
+[Method: GET, Route: datakemasan]
+in APPPATH\Views\datamaster\v_datakemasan.php on line 188.
+ 1 APPPATH\Views\datamaster\v_datakemasan.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NamaProduk"', 'D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\app\\Views\\datamaster\\v_datakemasan.php', 188)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\app\\Views\\datamaster\\v_datakemasan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datamaster/v_datakemasan', [], true)
+ 5 APPPATH\Controllers\KemasanController.php(22): view('datamaster/v_datakemasan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KemasanController->datakemasan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KemasanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 12:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-07-22 12:28:08 --> ErrorException: Undefined array key "NamaProduk"
+[Method: GET, Route: datakemasan]
+in APPPATH\Views\datamaster\v_datakemasan.php on line 188.
+ 1 APPPATH\Views\datamaster\v_datakemasan.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "NamaProduk"', 'D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\app\\Views\\datamaster\\v_datakemasan.php', 188)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\app\\Views\\datamaster\\v_datakemasan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('datamaster/v_datakemasan', [], true)
+ 5 APPPATH\Controllers\KemasanController.php(22): view('datamaster/v_datakemasan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KemasanController->datakemasan()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KemasanController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Olla Smst 8\\Skripsi\\BAB IV\\program\\JeanetteBakery\\public\\index.php')
+DEBUG - 2026-07-22 12:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:37:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-07-22 12:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
