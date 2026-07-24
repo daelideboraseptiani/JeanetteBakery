@@ -49,4 +49,20 @@ class ModalKemasan extends Model
             ->get()
             ->getResultArray();
     }
+
+    public function getKatalog()
+    {
+        return $this->db->table('Kemasan')
+            ->select('
+            Kemasan.*,
+            Produk.NamaProduk,
+            Produk.Deskripsi
+        ')
+            ->join('Produk', 'Produk.IdProduk = Kemasan.IdProduk')
+            ->where('Produk.StatusProduk', 'Aktif')
+            ->where('Kemasan.StatusKemasan', 'Aktif')
+            ->orderBy('Produk.NamaProduk', 'ASC')
+            ->get()
+            ->getResultArray();
+    }
 }

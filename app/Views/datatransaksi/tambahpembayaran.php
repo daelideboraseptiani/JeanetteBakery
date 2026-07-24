@@ -221,7 +221,6 @@
                         <option value="">-- Pilih Metode --</option>
                         <option value="Transfer">Transfer</option>
                         <option value="Cash">Cash</option>
-                        <option value="QRIS">QRIS</option>
 
                     </select>
 

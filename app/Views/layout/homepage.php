@@ -80,7 +80,7 @@
             <a href="index.html" class="nav-item nav-link active">Home</a>
             <a href="about.html" class="nav-item nav-link">About</a>
             <a href="service.html" class="nav-item nav-link">Services</a>
-            <a href="product.html" class="nav-item nav-link">Products</a>
+            <a href="<?= base_url('katalog') ?>?>" class="nav-item nav-link">Products</a>
 
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -96,11 +96,8 @@
 
         <!-- Tombol Login & Registrasi -->
         <div class="d-none d-lg-flex gap-2">
-            <a href="<?= base_url('login') ?>" class="btn btn-outline-light rounded-pill px-4">
-                Login
-            </a>
-            <a href="<?= base_url('registrasi') ?>" class="btn btn-primary rounded-pill px-4">
-                Registrasi
+            <a href="<?= base_url('pesanproduk') ?>" class="btn btn-primary rounded-pill px-4">
+                Pesan Sekarang
             </a>
         </div>
     </div>

@@ -228,11 +228,6 @@
                         Cash
                     </option>
 
-                    <option value="QRIS"
-                        <?= old('MetodePembayaran', $pembayaran['MetodePembayaran']) == 'QRIS' ? 'selected' : '' ?>>
-                        QRIS
-                    </option>
-
                 </select>
 
             </div>
