@@ -29,6 +29,7 @@
           </div>
         </div>
         <!-- Sidebar navigation-->
+         <?php if (session()->get('Role')=='Admin') { ?>
         <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
           <ul id="sidebarnav">
             <li class="nav-small-cap">
@@ -310,6 +311,155 @@
             </li>
           </ul>
         </nav>
+        <?php } ?>
+         <?php if (session()->get('Role')=='Pimpinan') { ?>
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
+              <span class="hide-menu">Home</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <i class="ti ti-atom"></i>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+            </li>
+            <!-- ---------------------------------- -->
+            <!-- Dashboard -->
+            <!-- ---------------------------------- -->
+            <li>
+              <span class="sidebar-divider lg"></span>
+            </li>
+            <li class="nav-small-cap">
+              <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
+              <span class="hide-menu">Laporan</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="<?= base_url('laporanuser')?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-accessible"></i>
+                  </span>
+                  <span class="hide-menu">Laporan User</span>
+                </div>
+                
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="<?= base_url('laporanpelanggan')?>"
+                aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-user-search"></i>
+                  </span>
+                  <span class="hide-menu">Laporan Pelanggan</span>
+                </div>
+                
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="<?= base_url('laporanproduk')?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-brand-google-photos"></i>
+                  </span>
+                  <span class="hide-menu">Laporan Produk</span>
+                </div>
+                
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="<?= base_url('laporankemasan')?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-masks-theater"></i>
+                  </span>
+                  <span class="hide-menu">Laporan Kemasan</span>
+                </div>
+                
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="<?= base_url('laporanbahanbaku')?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-arrows-maximize"></i>
+                  </span>
+                  <span class="hide-menu">Laporan Bahan Baku</span>
+                </div>
+                
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="<?= base_url('pemakaianbahanbaku')?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-arrows-maximize"></i>
+                  </span>
+                  <span class="hide-menu">Pemakaian Bahan Baku</span>
+                </div>
+                
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="<?= base_url('laporanproduksi')?>"
+                aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-sort-ascending"></i>
+                  </span>
+                  <span class="hide-menu">Laporan Produksi</span>
+                </div>
+                
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="<?= base_url('laporanpesanan')?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-currency-dollar"></i>
+                  </span>
+                  <span class="hide-menu">Laporan Pesanan</span>
+                </div>
+                
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="<?= base_url('laporanpenjualan')?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-help"></i>
+                  </span>
+                  <span class="hide-menu">Laporan Penjualan</span>
+                </div>
+                
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link justify-content-between"  
+                href="<?= base_url('fakturpembayaran')?>" aria-expanded="false">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="d-flex">
+                    <i class="ti ti-help"></i>
+                  </span>
+                  <span class="hide-menu">Faktur Pembayaran</span>
+                </div>
+                
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <?php } ?>
         <!-- End Sidebar navigation -->
       </div>
       <!-- End Sidebar scroll-->
@@ -365,7 +515,7 @@
                       <i class="ti ti-list-check fs-6"></i>
                       <p class="mb-0 fs-3">My Task</p>
                     </a>
-                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                    <a href="<?= base_url('logout') ?>?>" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                   </div>
                 </div>
               </li>

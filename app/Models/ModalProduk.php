@@ -23,4 +23,12 @@ class ModalProduk extends Model
         $nourut = (int)$row['nourut'] + 1;
         return 'PRD' . str_pad($nourut, 6, '0', STR_PAD_LEFT);
     }
+
+    public function getKategori()
+{
+    return $this->table('Produk')
+        ->where('StatusProduk', 'Aktif')
+        ->orderBy('NamaProduk', 'ASC')
+        ->findAll();
+}
 }

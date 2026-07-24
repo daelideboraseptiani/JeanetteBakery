@@ -36,7 +36,7 @@ class ModalUser extends Model
     // Cek login berdasarkan username atau email
     public function ceklogin($login)
     {
-        return $this->db->table('User')
+        return $this->db->table('USER')
             ->groupStart()
             ->where('Username', $login)
             ->orWhere('Email', $login)

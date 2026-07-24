@@ -5,6 +5,15 @@ use CodeIgniter\Router\RouteCollection;
 /** @var RouteCollection $routes */
 $routes->get('/', 'LayoutController::index');
 $routes->get('/dashboard', 'LayoutController::dashboard');
+$routes->get('/homepage', 'LayoutController::homepage');
+$routes->get('/login', 'LayoutController::login');
+$routes->post('/login/ceklogin', 'LayoutController::ceklogin');
+$routes->get('/logout', 'LayoutController::logout');
+$routes->get('/registrasi', 'LayoutController::registrasi');
+
+
+$routes->get('/katalog', 'LayoutController::katalog');
+
 
 /** USER **/
 $routes->get('/datauser', 'UserController::datauser');
