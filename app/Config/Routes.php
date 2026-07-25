@@ -7,12 +7,20 @@ $routes->get('/', 'LayoutController::index');
 $routes->get('/dashboard', 'LayoutController::dashboard');
 $routes->get('/homepage', 'LayoutController::homepage');
 $routes->get('/login', 'LayoutController::login');
-$routes->post('/login/ceklogin', 'LayoutController::ceklogin');
+$routes->post('/ceklogin', 'LayoutController::ceklogin');
 $routes->get('/logout', 'LayoutController::logout');
 $routes->get('/registrasi', 'LayoutController::registrasi');
-
+$routes->post('/registrasi/simpan', 'LayoutController::simpanregistrasi');
+ 
 
 $routes->get('/katalog', 'LayoutController::katalog');
+/** KERANJANG **/
+$routes->post('/keranjang/simpan', 'KeranjangController::simpan');
+$routes->get('/keranjang', 'KeranjangController::index');
+$routes->get('/keranjang/tambahqty/(:num)', 'KeranjangController::tambahQty/$1');
+$routes->get('/keranjang/kurangqty/(:num)', 'KeranjangController::kurangQty/$1');
+$routes->get('/keranjang/hapus/(:num)', 'KeranjangController::hapus/$1');
+$routes->post('/keranjang/checkout', 'KeranjangController::checkout');
 
 
 /** USER **/
@@ -74,6 +82,12 @@ $routes->post('/datapesanan/simpan', 'PesananController::simpan');
 $routes->get('/datapesanan/edit/(:segment)', 'PesananController::edit/$1');
 $routes->post('/datapesanan/update', 'PesananController::update');
 $routes->get('/datapesanan/hapus/(:segment)', 'PesananController::hapus/$1');
+$routes->get('/riwayatpesanan/batal/(:segment)', 'PesananController::batalPesanan/$1');
+
+$routes->get('/riwayatpesanan', 'PesananController::riwayatpesanan');
+$routes->get('/pembayaran/(:segment)', 'PembayaranController::bayar/$1');
+$routes->post('/pembayaran/simpanbayar', 'PembayaranController::simpanbayar');
+
 
 /** Pembayaran **/
 $routes->get('/datapembayaran', 'PembayaranController::datapembayaran');
@@ -105,3 +119,4 @@ $routes->get('/pemakaianbahanbaku/cetak', 'LaporanController::cetakpemakaianbaha
 /** FAKTUR **/
 $routes->get('/fakturpembayaran', 'LaporanController::fakturpembayaran');
 $routes->post('/fakturpembayaran/cetak', 'LaporanController::cetakfaktur');
+$routes->get('fakturpembayaran/(:segment)', 'PelangganController::fakturPembayaran/$1');

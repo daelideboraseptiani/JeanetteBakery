@@ -467,4 +467,123 @@ class PembayaranController extends BaseController
         return redirect()->to(base_url('datapembayaran'))
             ->with('success', 'Data pembayaran berhasil dihapus');
     }
+
+    public function bayar($IdPesanan)
+    {
+        $modelPesanan = new ModalPesanan();
+        $modelPembayaran = new ModalPembayaran();
+
+        $pesanan = $modelPesanan->getPesanan($IdPesanan);
+        $detail = $modelPesanan->getDetailPesanan($IdPesanan);
+
+        // Cek apakah sudah pernah bayar untuk pesanan ini
+        $pembayaran = $modelPembayaran
+            ->where('IdPesanan', $IdPesanan)
+            ->first();
+
+        $isPelunasan = false;
+        $sisaBayar = $pesanan['Total'];
+
+        if ($pembayaran) {
+
+            if ($pembayaran['JenisPembayaran'] == 'DP') {
+
+                $isPelunasan = true;
+
+                $sisaBayar = $pesanan['Total'] - $pembayaran['JumlahBayar'];
+            }
+        }
+
+        $data = [
+            'pesanan'      => $pesanan,
+            'detail'       => $detail,
+            'pembayaran'   => $pembayaran,
+            'isPelunasan'  => $isPelunasan,
+            'sisaBayar'    => $sisaBayar
+        ];
+
+        return view('layout/bayarpesanan', $data);
+    }
+
+    public function simpanbayar()
+    {
+        $modalPembayaran = new ModalPembayaran();
+
+        $validation = \Config\Services::validation();
+
+        $valid = $this->validate([
+            'IdPesanan' => [
+                'label' => 'Pesanan',
+                'rules' => 'required'
+            ],
+            'JenisPembayaran' => [
+                'label' => 'Jenis Pembayaran',
+                'rules' => 'required'
+            ],
+            'MetodePembayaran' => [
+                'label' => 'Metode Pembayaran',
+                'rules' => 'required'
+            ],
+            'JumlahBayar' => [
+                'label' => 'Jumlah Pembayaran',
+                'rules' => 'required'
+            ],
+            'BuktiPembayaran' => [
+                'label' => 'Bukti Pembayaran',
+                'rules' => 'uploaded[BuktiPembayaran]|is_image[BuktiPembayaran]|max_size[BuktiPembayaran,2048]'
+            ]
+        ]);
+
+        if (!$valid) {
+
+            session()->setFlashdata('pesan', [
+                'Validasi Gagal',
+                $validation->listErrors(),
+                'error'
+            ]);
+
+            return redirect()->back()->withInput();
+        }
+
+        // Generate ID Pembayaran
+        $idPembayaran = $modalPembayaran->generateId();
+
+        // Upload Bukti Pembayaran
+        $file = $this->request->getFile('BuktiPembayaran');
+
+        $namaFile = $file->getRandomName();
+
+        $file->move('storage/fotobuktipem', $namaFile);
+
+        // Simpan Data
+        $data = [
+
+            'IdPembayaran'      => $idPembayaran,
+
+            'IdPesanan'         => $this->request->getPost('IdPesanan'),
+
+            'TglBayar'          => date('Y-m-d'),
+
+            'JenisPembayaran'   => $this->request->getPost('JenisPembayaran'),
+
+            'MetodePembayaran'  => $this->request->getPost('MetodePembayaran'),
+
+            'JumlahBayar'       => str_replace('.', '', $this->request->getPost('JumlahBayar')),
+
+            'BuktiPembayaran'   => $namaFile,
+
+            'StatusPembayaran'  => 'Menunggu Verifikasi'
+
+        ];
+
+        $modalPembayaran->insert($data);
+
+        session()->setFlashdata('pesan', [
+            'Berhasil',
+            'Pembayaran berhasil dikirim.',
+            'success'
+        ]);
+
+        return redirect()->to(base_url('riwayatpesanan'));
+    }
 }

@@ -49,7 +49,7 @@ Pelanggan.NamaPelanggan
 ')
             ->join('Pesanan', 'Pesanan.IdPesanan = Pembayaran.IdPesanan')
             ->join('Pelanggan', 'Pelanggan.IdPelanggan = Pesanan.IdPelanggan')
-            ->orderBy('Pembayaran.TglBayar', 'DESC')
+            ->orderBy('Pembayaran.IdPembayaran  ', 'DESC')
             ->findAll();
 
 

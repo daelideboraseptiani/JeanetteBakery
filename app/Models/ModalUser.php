@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class ModalUser extends Model
 {
-    protected $table = 'User';
+    protected $table = 'USER';
     protected $primaryKey = 'IdUser';
 
     protected $allowedFields = [
@@ -19,21 +19,25 @@ class ModalUser extends Model
         'Status'
     ];
 
-    // Generate ID otomatis
+    // ==========================
+    // Generate ID
+    // ==========================
     public function generateId()
     {
         $query = $this->db->query(
-            "SELECT MAX(SUBSTRING(IdUser, 4, 6)) AS nourut FROM User"
+            "SELECT MAX(SUBSTRING(IdUser,4,6)) AS nourut FROM USER"
         );
 
         $row = $query->getRowArray();
 
-        $nourut = (int) ($row['nourut'] ?? 0) + 1;
+        $nourut = (int)($row['nourut'] ?? 0) + 1;
 
         return 'USR' . str_pad($nourut, 6, '0', STR_PAD_LEFT);
     }
 
-    // Cek login berdasarkan username atau email
+    // ==========================
+    // Login
+    // ==========================
     public function ceklogin($login)
     {
         return $this->db->table('USER')
@@ -43,5 +47,21 @@ class ModalUser extends Model
             ->groupEnd()
             ->get()
             ->getRowArray();
+    }
+
+    // ==========================
+    // Cek Username
+    // ==========================
+    public function cekUsername($username)
+    {
+        return $this->where('Username', $username)->first();
+    }
+
+    // ==========================
+    // Cek Email
+    // ==========================
+    public function cekEmail($email)
+    {
+        return $this->where('Email', $email)->first();
     }
 }

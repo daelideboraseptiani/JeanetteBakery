@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,21 +14,21 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="<?= base_url()?>/assets/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="<?= base_url()?>/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="<?= base_url()?>/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="<?= base_url()?>/assets/css/style.css" rel="stylesheet">
+    <link href="<?= base_url() ?>/assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -66,42 +65,94 @@
 
 
     <!-- Navbar Start -->
-   <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-    <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-        <h1 class="text-primary m-0">Baker</h1>
-    </a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0">Baker</h1>
+        </a>
 
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav mx-auto p-4 p-lg-0">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="service.html" class="nav-item nav-link">Services</a>
-            <a href="<?= base_url('katalog') ?>?>" class="nav-item nav-link">Products</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="<?= base_url('katalog') ?>" class="nav-item nav-link">Products</a>
 
-            <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                <div class="dropdown-menu m-0">
-                    <a href="team.html" class="dropdown-item">Our Team</a>
-                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    <a href="404.html" class="dropdown-item">404 Page</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
                 </div>
+
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
 
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-        </div>
+            <!-- Keranjang + Profil -->
+            <div class="d-none d-lg-flex align-items-center gap-3">
 
-        <!-- Tombol Login & Registrasi -->
-        <div class="d-none d-lg-flex gap-2">
-            <a href="<?= base_url('pesanproduk') ?>" class="btn btn-primary rounded-pill px-4">
-                Pesan Sekarang
-            </a>
+                <!-- Icon Keranjang -->
+                <a href="<?= base_url('keranjang') ?>" class="position-relative text-dark">
+                    <i class="bi bi-cart3 fs-3"></i>
+
+                    <!-- Badge jumlah item -->
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        <?= isset($jumlahKeranjang) ? $jumlahKeranjang : 0 ?>
+                    </span>
+                </a>
+
+                <!-- Dropdown Profil -->
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-decoration-none"
+                        id="profileDropdown"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <img src="<?= base_url('assetsdashboard/images/profile/user-1.jpg') ?>"
+                            alt="Profile"
+                            width="40"
+                            height="40"
+                            class="rounded-circle border border-2 border-light">
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0 mt-2"
+                        aria-labelledby="profileDropdown">
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="ti ti-user me-2"></i>
+                                Profile
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="<?= base_url('riwayatpesanan') ?>">
+                                <i class="ti ti-mail me-2"></i>
+                                Riwayat Pesanan
+                            </a>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="px-3 pb-2">
+                            <a href="<?= base_url('logout') ?>" class="btn btn-outline-primary w-100 rounded-pill">
+                                Logout
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
     <!-- Navbar End -->
 
 
@@ -109,7 +160,7 @@
     <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="<?= base_url()?>/assets/img/carousel-1.jpg" alt="">
+                <img class="img-fluid" src="<?= base_url() ?>/assets/img/carousel-1.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -124,7 +175,7 @@
                 </div>
             </div>
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="<?= base_url()?>/assets/img/carousel-2.jpg" alt="">
+                <img class="img-fluid" src="<?= base_url() ?>/assets/img/carousel-2.jpg" alt="">
                 <div class="owl-carousel-inner">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -188,10 +239,10 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="row img-twice position-relative h-100">
                         <div class="col-6">
-                            <img class="img-fluid rounded" src="<?= base_url()?>/assets/img/about-1.jpg" alt="">
+                            <img class="img-fluid rounded" src="<?= base_url() ?>/assets/img/about-1.jpg" alt="">
                         </div>
                         <div class="col-6 align-self-end">
-                            <img class="img-fluid rounded" src="<?= base_url()?>/assets/img/about-2.jpg" alt="">
+                            <img class="img-fluid rounded" src="<?= base_url() ?>/assets/img/about-2.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -349,10 +400,10 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row img-twice position-relative h-100">
                         <div class="col-6">
-                            <img class="img-fluid rounded" src="<?= base_url()?>/assets/img/service-1.jpg" alt="">
+                            <img class="img-fluid rounded" src="<?= base_url() ?>/assets/img/service-1.jpg" alt="">
                         </div>
                         <div class="col-6 align-self-end">
-                            <img class="img-fluid rounded" src="<?= base_url()?>/assets/img/service-2.jpg" alt="">
+                            <img class="img-fluid rounded" src="<?= base_url() ?>/assets/img/service-2.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -372,7 +423,7 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item text-center rounded overflow-hidden">
-                        <img class="img-fluid" src="<?= base_url()?>/assets/img/team-1.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>/assets/img/team-1.jpg" alt="">
                         <div class="team-text">
                             <div class="team-title">
                                 <h5>Full Name</h5>
@@ -388,7 +439,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item text-center rounded overflow-hidden">
-                        <img class="img-fluid" src="<?= base_url()?>/assets/img/team-2.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>/assets/img/team-2.jpg" alt="">
                         <div class="team-text">
                             <div class="team-title">
                                 <h5>Full Name</h5>
@@ -404,7 +455,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item text-center rounded overflow-hidden">
-                        <img class="img-fluid" src="<?= base_url()?>/assets/img/team-3.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>/assets/img/team-3.jpg" alt="">
                         <div class="team-text">
                             <div class="team-title">
                                 <h5>Full Name</h5>
@@ -420,7 +471,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item text-center rounded overflow-hidden">
-                        <img class="img-fluid" src="<?= base_url()?>/assets/img/team-4.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>/assets/img/team-4.jpg" alt="">
                         <div class="team-text">
                             <div class="team-title">
                                 <h5>Full Name</h5>
@@ -450,7 +501,7 @@
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item bg-white rounded p-4">
                     <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="<?= base_url()?>/assets/img/testimonial-1.jpg" alt="">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="<?= base_url() ?>/assets/img/testimonial-1.jpg" alt="">
                         <div class="ms-4">
                             <h5 class="mb-1">Client Name</h5>
                             <span>Profession</span>
@@ -460,7 +511,7 @@
                 </div>
                 <div class="testimonial-item bg-white rounded p-4">
                     <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="<?= base_url()?>/assets/img/testimonial-2.jpg" alt="">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="<?= base_url() ?>/assets/img/testimonial-2.jpg" alt="">
                         <div class="ms-4">
                             <h5 class="mb-1">Client Name</h5>
                             <span>Profession</span>
@@ -470,7 +521,7 @@
                 </div>
                 <div class="testimonial-item bg-white rounded p-4">
                     <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="<?= base_url()?>/assets/img/testimonial-3.jpg" alt="">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="<?= base_url() ?>/assets/img/testimonial-3.jpg" alt="">
                         <div class="ms-4">
                             <h5 class="mb-1">Client Name</h5>
                             <span>Profession</span>
@@ -480,7 +531,7 @@
                 </div>
                 <div class="testimonial-item bg-white rounded p-4">
                     <div class="d-flex align-items-center mb-4">
-                        <img class="flex-shrink-0 rounded-circle border p-1" src="<?= base_url()?>/assets/img/testimonial-4.jpg" alt="">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="<?= base_url() ?>/assets/img/testimonial-4.jpg" alt="">
                         <div class="ms-4">
                             <h5 class="mb-1">Client Name</h5>
                             <span>Profession</span>
@@ -543,22 +594,22 @@
                     <h4 class="text-light mb-4">Photo Gallery</h4>
                     <div class="row g-2">
                         <div class="col-4">
-                            <img class="img-fluid bg-light rounded p-1" src="<?= base_url()?>/assets/img/product-1.jpg" alt="Image">
+                            <img class="img-fluid bg-light rounded p-1" src="<?= base_url() ?>/assets/img/product-1.jpg" alt="Image">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light rounded p-1" src="<?= base_url()?>/assets/img/product-2.jpg" alt="Image">
+                            <img class="img-fluid bg-light rounded p-1" src="<?= base_url() ?>/assets/img/product-2.jpg" alt="Image">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light rounded p-1" src="<?= base_url()?>/assets/img/product-3.jpg" alt="Image">
+                            <img class="img-fluid bg-light rounded p-1" src="<?= base_url() ?>/assets/img/product-3.jpg" alt="Image">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light rounded p-1" src="<?= base_url()?>/assets/img/product-2.jpg" alt="Image">
+                            <img class="img-fluid bg-light rounded p-1" src="<?= base_url() ?>/assets/img/product-2.jpg" alt="Image">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light rounded p-1" src="<?= base_url()?>/assets/img/product-3.jpg" alt="Image">
+                            <img class="img-fluid bg-light rounded p-1" src="<?= base_url() ?>/assets/img/product-3.jpg" alt="Image">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light rounded p-1" src="<?= base_url()?>/assets/img/product-1.jpg" alt="Image">
+                            <img class="img-fluid bg-light rounded p-1" src="<?= base_url() ?>/assets/img/product-1.jpg" alt="Image">
                         </div>
                     </div>
                 </div>
@@ -593,14 +644,14 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="<?= base_url()?>/assets/lib/wow/wow.min.js"></script>
-    <script src="<?= base_url()?>/assets/lib/easing/easing.min.js"></script>
-    <script src="<?= base_url()?>/assets/lib/waypoints/waypoints.min.js"></script>
-    <script src="<?= base_url()?>/assets/lib/counterup/counterup.min.js"></script>
-    <script src="<?= base_url()?>/assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="<?= base_url() ?>/assets/lib/wow/wow.min.js"></script>
+    <script src="<?= base_url() ?>/assets/lib/easing/easing.min.js"></script>
+    <script src="<?= base_url() ?>/assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="<?= base_url() ?>/assets/lib/counterup/counterup.min.js"></script>
+    <script src="<?= base_url() ?>/assets/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="<?= base_url()?>/assets/js/main.js"></script>
+    <script src="<?= base_url() ?>/assets/js/main.js"></script>
 </body>
 
 </html>
