@@ -79,7 +79,7 @@
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="product.html" class="nav-item nav-link">Products</a>
+                <a href="<?= base_url('katalog') ?>" class="nav-item nav-link">Products</a>
 
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -93,11 +93,63 @@
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
 
-            <!-- Tombol Login & Registrasi -->
-            <div class="d-none d-lg-flex gap-2">
-                <a href="<?= base_url('katalog') ?>" class="btn btn-primary rounded-pill px-4">
-                    Pesan Sekarang
+            <!-- Keranjang + Profil -->
+            <div class="d-none d-lg-flex align-items-center gap-3">
+
+                <!-- Icon Keranjang -->
+                <a href="<?= base_url('keranjang') ?>" class="position-relative text-dark">
+                    <i class="bi bi-cart3 fs-3"></i>
+
+                    <!-- Badge jumlah item -->
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        <?= isset($jumlahKeranjang) ? $jumlahKeranjang : 0 ?>
+                    </span>
                 </a>
+
+                <!-- Dropdown Profil -->
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-decoration-none"
+                        id="profileDropdown"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <img src="<?= base_url('assetsdashboard/images/profile/user-1.jpg') ?>"
+                            alt="Profile"
+                            width="40"
+                            height="40"
+                            class="rounded-circle border border-2 border-light">
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end shadow border-0 mt-2"
+                        aria-labelledby="profileDropdown">
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="ti ti-user me-2"></i>
+                                Profile
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="<?= base_url('riwayatpesanan') ?>">
+                                <i class="ti ti-mail me-2"></i>
+                                Riwayat Pesanan
+                            </a>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="px-3 pb-2">
+                            <a href="<?= base_url('logout') ?>" class="btn btn-outline-primary w-100 rounded-pill">
+                                Logout
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
             </div>
         </div>
     </nav>
@@ -193,7 +245,7 @@
                                             <button
                                                 class="btn-detail"
 
-                                                data-id="<?= $row['IdKemasan']; ?>"
+                                                data-idkemasan="<?= $row['IdKemasan']; ?>"
                                                 data-produk="<?= esc($row['NamaProduk']); ?>"
                                                 data-kemasan="<?= esc($row['NamaKemasan']); ?>"
                                                 data-berat="<?= $row['Berat']; ?>"
@@ -242,95 +294,112 @@
 
             <div class="modal-content">
 
-                <div class="modal-header">
+                <form action="<?= base_url('keranjang/simpan') ?>" method="post">
 
-                    <h4 class="modal-title">
+                    <?= csrf_field() ?>
 
-                        <i class="fa fa-gift"></i>
-                        Detail Produk
+                    <!-- Hidden -->
+                    <input type="hidden" name="IdKemasan" id="IdKemasan">
+                    <input type="hidden" name="Harga" id="InputHarga">
 
-                    </h4>
+                    <div class="modal-header">
 
-                    <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal">
-                    </button>
+                        <h4 class="modal-title">
+                            <i class="fa fa-gift"></i>
+                            Detail Produk
+                        </h4>
 
-                </div>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal">
+                        </button>
 
-                <div class="modal-body">
+                    </div>
 
-                    <div class="row">
+                    <div class="modal-body">
 
-                        <!-- FOTO -->
-                        <div class="col-md-5">
+                        <div class="row">
 
-                            <img
-                                id="modalFoto"
-                                src=""
-                                class="img-fluid rounded shadow-sm w-100">
+                            <!-- FOTO -->
+                            <div class="col-md-5">
 
-                        </div>
+                                <img
+                                    id="modalFoto"
+                                    src=""
+                                    class="img-fluid rounded shadow-sm w-100">
 
-                        <!-- INFORMASI -->
-                        <div class="col-md-7">
+                            </div>
 
-                            <h3 id="modalProduk"></h3>
+                            <!-- INFORMASI -->
+                            <div class="col-md-7">
 
-                            <hr>
+                                <h3 id="modalProduk"></h3>
 
-                            <table class="table table-borderless">
+                                <hr>
 
-                                <tr>
-                                    <th width="35%">Kemasan</th>
-                                    <td id="modalKemasan"></td>
-                                </tr>
+                                <table class="table table-borderless">
 
-                                <tr>
-                                    <th>Berat</th>
-                                    <td id="modalBerat"></td>
-                                </tr>
+                                    <tr>
+                                        <th width="35%">Kemasan</th>
+                                        <td id="modalKemasan"></td>
+                                    </tr>
 
-                                <tr>
-                                    <th>Harga</th>
-                                    <td id="modalHarga"></td>
-                                </tr>
+                                    <tr>
+                                        <th>Berat</th>
+                                        <td id="modalBerat"></td>
+                                    </tr>
 
-                            </table>
+                                    <tr>
+                                        <th>Harga</th>
+                                        <td id="modalHarga"></td>
+                                    </tr>
 
-                            <h5>Deskripsi</h5>
+                                </table>
 
-                            <p id="modalDeskripsi"></p>
+                                <h5>Deskripsi</h5>
+
+                                <p id="modalDeskripsi"></p>
+
+                                <!-- Qty -->
+                                <div class="mt-3">
+                                    <label class="form-label">Jumlah</label>
+                                    <input
+                                        type="number"
+                                        name="Qty"
+                                        class="form-control"
+                                        min="1"
+                                        value="1"
+                                        required>
+                                </div>
+
+                            </div>
 
                         </div>
 
                     </div>
 
-                </div>
+                    <div class="modal-footer">
 
-                <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+                            Tutup
+                        </button>
 
-                    <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal">
+                        <button
+                            type="submit"
+                            class="btn btn-warning">
 
-                        Tutup
+                            <i class="fa fa-shopping-cart"></i>
+                            Tambah Keranjang
 
-                    </button>
+                        </button>
 
-                    <a
-                        href="#"
-                        id="btnKeranjang"
-                        class="btn btn-warning">
+                    </div>
 
-                        <i class="fa fa-shopping-cart"></i>
-                        Tambah Keranjang
-
-                    </a>
-
-                </div>
+                </form>
 
             </div>
 
@@ -483,46 +552,42 @@
 
             });
 
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
 
+            $('.btn-detail').click(function() {
 
-            // ================================
-            // MODAL DETAIL
-            // ================================
-            const detailButtons = document.querySelectorAll(".btn-detail");
+                // Ambil data dari tombol
+                let idKemasan = $(this).data('idkemasan');
+                let produk = $(this).data('produk');
+                let kemasan = $(this).data('kemasan');
+                let berat = $(this).data('berat');
+                let satuan = $(this).data('satuan');
+                let harga = $(this).data('harga');
+                let deskripsi = $(this).data('deskripsi');
+                let foto = $(this).data('foto');
 
-            detailButtons.forEach(function(btn) {
+                // Isi data ke modal
+                $('#modalProduk').text(produk);
+                $('#modalKemasan').text(kemasan);
+                $('#modalBerat').text(berat + ' ' + satuan);
+                $('#modalHarga').text('Rp ' + Number(harga).toLocaleString('id-ID'));
+                $('#modalDeskripsi').text(deskripsi);
 
-                btn.addEventListener("click", function() {
+                // Foto
+                $('#modalFoto').attr('src', foto);
 
-                    document.getElementById("modalProduk").innerHTML =
-                        this.dataset.produk;
+                // Hidden input untuk form
+                $('#IdKemasan').val(idKemasan);
+                $('#InputHarga').val(harga);
 
-                    document.getElementById("modalKemasan").innerHTML =
-                        this.dataset.kemasan;
+                // Reset qty setiap modal dibuka
+                $('#Qty').val(1);
 
-                    document.getElementById("modalBerat").innerHTML =
-                        this.dataset.berat;
-
-                    document.getElementById("modalHarga").innerHTML =
-                        "Rp " + this.dataset.harga;
-
-                    document.getElementById("modalDeskripsi").innerHTML =
-                        this.dataset.deskripsi;
-
-                    document.getElementById("modalFoto").src =
-                        this.dataset.foto;
-
-                    // Nanti saat fitur keranjang dibuat
-                    document.getElementById("btnKeranjang").href =
-                        "<?= base_url('keranjang/tambah/') ?>" + this.dataset.id;
-
-                    let modal = new bootstrap.Modal(
-                        document.getElementById("modalDetailKemasan")
-                    );
-
-                    modal.show();
-
-                });
+                // Tampilkan modal
+                $('#modalDetailKemasan').modal('show');
 
             });
 

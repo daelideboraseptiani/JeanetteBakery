@@ -296,4 +296,69 @@ class PesananController extends BaseController
                 ->with('error', $e->getMessage());
         }
     }
+
+    public function riwayatpesanan($status = 'Semua')
+    {
+        $modelPesanan   = new ModalPesanan();
+        $modelPelanggan = new ModalPelanggan();
+
+        // Ambil pelanggan dari session
+        $pelanggan = $modelPelanggan
+            ->where('IdUser', session()->get('IdUser'))
+            ->first();
+
+        if (!$pelanggan) {
+
+            return redirect()->to('/homepage')
+                ->with('error', 'Data pelanggan tidak ditemukan.');
+        }
+
+        $IdPelanggan = $pelanggan['IdPelanggan'];
+
+        // Ambil data pesanan
+        $pesanan = $modelPesanan->getRiwayatPesanan($IdPelanggan, $status);
+
+        // Ambil detail setiap pesanan
+        foreach ($pesanan as &$row) {
+
+            $row['detail'] = $modelPesanan
+                ->getDetailPesanan($row['IdPesanan']);
+
+            // Ambil pembayaran terakhir
+            $row['pembayaran'] = $modelPesanan
+                ->getPembayaranTerakhir($row['IdPesanan']);
+        }
+
+        $data = [
+
+            'title'   => 'Riwayat Pesanan',
+
+            'status'  => $status,
+
+            'pesanan' => $pesanan
+
+        ];
+
+        return view('layout/riwayatpesanan', $data);
+    }
+
+    public function batalPesanan($idPesanan)
+    {
+        $modelPesanan = new \App\Models\ModalPesanan();
+
+        // Cek apakah pesanan ada
+        $pesanan = $modelPesanan->find($idPesanan);
+
+        if (!$pesanan) {
+            return redirect()->back()->with('error', 'Pesanan tidak ditemukan.');
+        }
+
+        // Batalkan pesanan
+        $modelPesanan->update($idPesanan, [
+            'StatusPesanan' => 'Dibatalkan'
+        ]);
+
+        return redirect()->to('/riwayatpesanan')
+            ->with('success', 'Pesanan berhasil dibatalkan.');
+    }
 }
